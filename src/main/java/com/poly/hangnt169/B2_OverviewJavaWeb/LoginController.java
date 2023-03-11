@@ -21,7 +21,7 @@ public class LoginController extends HttpServlet {
         // Truyền giá trị từ Servlet sang JSP
         request.setAttribute("mess1", "HangNT169");
         // Chuyển trang
-        request.getRequestDispatcher("form-login.jsp").forward(request,response);
+        request.getRequestDispatcher("/buoi2/form-login.jsp").forward(request,response);
 //        response.sendRedirect("/form-login.jsp");
     }
 
@@ -36,6 +36,6 @@ public class LoginController extends HttpServlet {
         request.setAttribute("u2",password);
 
         // Chuyen trang
-        request.getRequestDispatcher("hien-thi-ket-qua.jsp").forward(request,response);
+        request.getRequestDispatcher("/buoi2/login/hien-thi-ket-qua.jsp").forward(request,response);
     }
 }
