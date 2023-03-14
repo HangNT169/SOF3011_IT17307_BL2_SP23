@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<form action="" method="post">
+<form action="/sinh-vien/add" method="post">
     MSSV: <input type="text" name="mssv"/>
     <br/>
     Tên: <input type="text" name="ten"/>
@@ -25,7 +25,7 @@
     <input type="radio" name="gioiTinh" checked value="true"/>Nam
     <input type="radio" name="gioiTinh" value="false"/>Nữ
     <br/>
-    <button>Add</button>
+    <button type="submit">Add</button>
 </form>
 </body>
 </html>

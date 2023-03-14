@@ -13,9 +13,9 @@
 <body>
 
 <form action="">
-    MSSV: <input type="text" name="mssv" />
+    MSSV: <input type="text" name="mssv" value="${sinhVien.mssv}" />
     <br/>
-    Tên: <input type="text" name="ten"/>
+    Tên: <input type="text" name="ten" value="${sinhVien.ten}" />
     <br/>
     Tuổi: <input type="text" name="tuoi" />
     <br/>

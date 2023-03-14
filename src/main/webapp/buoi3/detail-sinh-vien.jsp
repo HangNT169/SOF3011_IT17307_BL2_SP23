@@ -11,14 +11,14 @@
     <title>Title</title>
 </head>
 <body>
-    MSSV:
+    MSSV:${sinhVien.mssv}
     <br/>
-    Ten:
+    Ten::${sinhVien.ten}
     <br/>
-    Tuoi:
+    Tuoi::${sinhVien.ten}
     <br/>
-    Dia chi:
+    Dia chi::${sinhVien.diaChi}
     <br/>
-    Gioi tinh:
+    Gioi tinh::${sinhVien.diaChi}
 </body>
 </html>
