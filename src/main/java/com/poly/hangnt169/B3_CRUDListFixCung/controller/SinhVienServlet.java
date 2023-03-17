@@ -1,19 +1,21 @@
 package com.poly.hangnt169.B3_CRUDListFixCung.controller;
-/**
- * @author hangnt169
- */
 
 import com.poly.hangnt169.B3_CRUDListFixCung.entity.SinhVien;
 import com.poly.hangnt169.B3_CRUDListFixCung.service.SinhVienService;
 import com.poly.hangnt169.B3_CRUDListFixCung.service.impl.SinhVienServiceImpl;
-import jakarta.servlet.*;
-import jakarta.servlet.http.*;
-import jakarta.servlet.annotation.*;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author hangnt169
+ */
 @WebServlet(name = "SinhVienController", value = {
         "/sinh-vien/hien-thi", // GET
         "/sinh-vien/search", // GET

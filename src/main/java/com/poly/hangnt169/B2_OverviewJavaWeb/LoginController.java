@@ -9,7 +9,7 @@ import jakarta.servlet.annotation.*;
 
 import java.io.IOException;
 
-@WebServlet(name = "LoginController", value = {"/login","/ket-qua"})
+@WebServlet(name = "LoginController", value = {"/login1","/ket-qua"})
 public class LoginController extends HttpServlet {
     // controller: Là tầng giao tiếp với client(view-jsp) thông qua liệu
     // phương thức HTTP
