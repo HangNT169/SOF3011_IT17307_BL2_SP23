@@ -16,6 +16,9 @@ import java.io.IOException;
 /**
  * @author hangnt169
  */
+//@WebFilter(filterName = "AuthenFilter", value =
+//        {"/sinh-vien/hien-thi","/sinh-vien/view-add"
+//        })
 @WebFilter(filterName = "AuthenFilter", value = {
         "/sinh-vien/*", "/CategoryServlet"
 })
