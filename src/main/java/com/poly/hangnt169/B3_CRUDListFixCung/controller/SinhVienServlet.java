@@ -80,7 +80,7 @@ public class SinhVienServlet extends HttpServlet {
         String diaChi = request.getParameter("diaChi");
         String gioiTinh = request.getParameter("gioiTinh");
 
-        SinhVien sv  = SinhVien.builder()
+        SinhVien sv = SinhVien.builder()
                 .ten(tenStr)
                 .mssv(mssv)
                 .tuoi(Integer.valueOf(tuoi))
@@ -95,21 +95,21 @@ public class SinhVienServlet extends HttpServlet {
     private void viewUpdateSinhVien(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Lay gia tri tu jsp ve servlet
         String id = request.getParameter("id");
-        SinhVien sv = sinhVienService.findBySinhVienByMSSV(sinhViens,id);
-        request.setAttribute("sinhVien",sv);
-        request.getRequestDispatcher("/buoi3/update-sinh-vien.jsp").forward(request,response);
+        SinhVien sv = sinhVienService.findBySinhVienByMSSV(sinhViens, id);
+        request.setAttribute("sinhVien", sv);
+        request.getRequestDispatcher("/buoi3/update-sinh-vien.jsp").forward(request, response);
     }
 
     private void viewAddSinhVien(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/buoi3/add-sinh-vien.jsp").forward(request,response);
+        request.getRequestDispatcher("/buoi3/add-sinh-vien.jsp").forward(request, response);
     }
 
     private void detailSinhVien(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // Lay gia tri tu jsp ve servlet
         String id = request.getParameter("id");
-        SinhVien sv = sinhVienService.findBySinhVienByMSSV(sinhViens,id);
-        request.setAttribute("sinhVien",sv);
-        request.getRequestDispatcher("/buoi3/detail-sinh-vien.jsp").forward(request,response);
+        SinhVien sv = sinhVienService.findBySinhVienByMSSV(sinhViens, id);
+        request.setAttribute("sinhVien", sv);
+        request.getRequestDispatcher("/buoi3/detail-sinh-vien.jsp").forward(request, response);
     }
 
     private void removeSinhVien(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
